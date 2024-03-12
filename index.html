@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JAPAN TRAVEL TOUR - TC GROUP</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/Artboard 1.png" type="image/svg+xml">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/tb.css">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="JAPAN TRAVEL TOUR - TC GROUP">
+  <meta property="og:description" content="Hãy cùng chúng tôi khám phá Nhật Bản. Chúng tôi cung cấp các tour du lịch có hướng dẫn viên, giá cả phải chăng và dịch vụ đáng tin cậy.">
+  <meta property="og:image" content="./assets/images/Artboard 1.png">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:title" content="JAPAN TRAVEL TOUR - TC GROUP">
+  <meta name="twitter:description" content="Hãy cùng chúng tôi khám phá Nhật Bản. Chúng tôi cung cấp các tour du lịch có hướng dẫn viên, giá cả phải chăng và dịch vụ đáng tin cậy.">
+  <meta name="twitter:image" content="./assets/images/Artboard 1.png">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+
+
+<body id="top">
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0&appId=328416055621601" nonce="QnlG0Poc"></script>
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#home">
+        <img src="./assets/images/Artboard 1.png" width="120px" height="50px"/>
+        <!-- <h1 class="logo">Japan Travel</h1> -->
+      </a>
+
+      <button class="nav-toggle-btn" data-nav-toggle-btn aria-label="Toggle Menu">
+        <ion-icon name="menu-outline" class="open"></ion-icon>
+        <ion-icon name="close-outline" class="close"></ion-icon>
+      </button>
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <!-- <li>
+            <img src="./assets/images/Artboard 1.png" width="100px" height="60px"/>
+          </li> -->
+
+          <li>
+            <a href="#home" class="navbar-link">Trang chủ</a>
+          </li>
+
+          <li>
+            <a href="#aboutus" class="navbar-link">Giới thiệu</a>
+          </li>
+
+          <li>
+            <a href="#tourshot" class="navbar-link">Tours phổ biến nhất</a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="navbar-link">Destinations</a>
+          </li> -->
+
+          <li>
+            <a href="#" class="navbar-link" onclick="toggleCommunityMenu()">Cộng Đồng 
+              <svg viewBox="0 0 320 512" width="20" height="20">
+                <path fill="#bababa" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"/>
+              </svg>
+            </a>
+            <ul class="community-menu" id="communityMenu" onclick="toggleCommunityMenu()">
+              <li style="margin: 5px;"><a href="https://www.facebook.com/groups/1809758722501018" target="_blank">Nhóm Du Lịch</a></li>
+              <li style="margin: 5px;"><a href="https://www.facebook.com/100067101506717" target="_blank">Fanpage</a></li>
+            </ul>
+          </li>
+          
+
+          <!-- <li>
+            <a href="#" class="navbar-link">Contact Us</a>
+          </li> -->
+
+        </ul>
+
+        <a href="#" class="btn btn-secondary contactLink">Đặt chuyến ngay</a>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero"
+        style="background-image: url('./assets/images/hero-bg-bottom.png') url('./assets/images/hero-bg-top.png')">
+        <div class="container">
+
+          <img src="./assets/images/travel.png" width="61" height="61" alt="Vector Shape" class="shape shape-1">
+
+          <img src="./assets/images/fish.png" width="86" height="104" alt="Vector Shape" class="shape shape-2">
+
+          <img src="./assets/images/daruma.png" width="75" height="90" alt="Vector Shape" class="shape shape-3">
+
+          <div class="hero-content">
+
+            <p class="section-subtitle" id="home">Khám phá chuyến du lịch của bạn</p>
+
+            <h2 class="hero-title">Đại lý du lịch đáng tin cậy</h2>
+
+            <br class="hero-text">
+              Khi bước chân ra khỏi cánh cửa, tôi không chỉ đơn giản là muốn đến một địa điểm nào đó. Đối với tôi, du lịch không chỉ là điểm đến, mà còn là chính hành trình.<br> Điều tuyệt vời nhất không phải là đứng trước một danh lam thắng cảnh, mà là cảm giác của sự di chuyển, những kỷ niệm và hành trình về những nơi chưa từng đặt chân.
+            </p>
+
+            <div class="btn-group" style="margin-top: 20px;">
+              <a href="#" class="btn btn-primary contactLink">Liên hệ với chúng tôi</a>
+              <!-- bảng thông báo -->
+              <div class="overlay" id="overlay">
+                <div class="modal" id="modal">
+                  <button type="button" class="close" id="closeButton" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <h2 class="mb-4" style="font-family:Courier; font-size: 20px; margin-bottom: 5px">Thông tin liên hệ & Đặt lịch</h2>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="card border-primary">
+                        <div class="card-body">
+                          <div class="card-title-container">
+                            <img src="./assets/icon/phone.jpg" alt="PNJ Logo" class="pnj-logo">
+                            <h3 class="card-title text-primary">Điện thoại</h3>
+                          </div>                          
+                          <p class="card-text mb-0">+81-80-3337-3979</p>
+                          <a href="tel:+818033373979" class="btn btn-outline-primary btn-sm mt-2 mr-2" target="_blank">Gọi điện</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-primary">
+                        <div class="card-body">
+                          <!-- <h3 class="card-title text-primary">
+                            <span class="icon-svg"></span>
+                            Điện thoại
+                          </h3> -->
+                          <div class="card-title-container">
+                            <img src="./assets/icon/zalo.jpg" alt="PNJ Logo" class="pnj-logo">
+                            <h3 class="card-title text-primary">Zalo</h3>
+                          </div> 
+
+                          <p class="card-text mb-0">+81-80-3337-3979</p>
+                          <a href="https://zalo.me/+818033373979" target="_blank" class="btn btn-outline-primary btn-sm mt-2 mr-2">Nhắn tin</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border-primary">
+                        <div class="card-body">
+                          <div class="card-title-container">
+                            <img src="./assets/icon/facebook.jpg" alt="PNJ Logo" class="pnj-logo">
+                            <h3 class="card-title text-primary">Facebook cá nhân <strong style="color: red; font-size: 15px">(Đề xuất)</strong> </h3>
+                          </div> 
+                          <p class="card-text mb-0">Trần Thành Công</p>
+                          <a href="https://www.facebook.com/100004838555624" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Truy cập</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+              
+              
+              
+              
+
+              <!-- <a href="https://www.facebook.com/100067101506717" target="_blank" class="btn btn-outline">Thông tin thêm</a> -->
+            </div>
+
+          </div>
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner2.jpeg" width="686" height="812" loading="lazy" alt="hero banner"
+              class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #DESTINATION
+      -->
+
+      <section class="section destination">
+        <div class="container">
+
+          <p class="section-subtitle">Điểm Đến</p>
+
+          <h2 class="h2 section-title">Chọn địa điểm của bạn</h2>
+
+          <ul class="destination-list">
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/b.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Malé, Maldives" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Nhật Bản</p>
+
+                  <h3 class="h3 card-title">Làng cổ Oshino Hakkai</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li class="w-50">
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/a.jpg" width="1140" height="1100" loading="lazy"
+                    alt="Bangkok, Thailand" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Nhật Bản</p>
+
+                  <h3 class="h3 card-title">Công viên Chidorigafuchi</h3>
+                </div>
+                
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/d.jpg" width="1110" height="480" loading="lazy"
+                    alt="Kathmandu, Nepal" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Nhật Bản <strong style="color: rgb(255, 0, 21);">(Dưới chân núi phú sĩ)</strong></p>
+
+                  <h3 class="h3 card-title">Thảm hoa Chi Anh</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/e.jpg" width="1110" height="480" loading="lazy"
+                    alt="Nhật Bản" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Nhật Bản</p>
+
+                  <h3 class="h3 card-title">Công viên Hitachi</h3>
+                </div>
+
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="destination-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/g.jpg" width="1110" height="480" loading="lazy"
+                    alt="Jakarta, Indonesia" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <p class="card-subtitle">Nhật Bản</p>
+
+                  <h3 class="h3 card-title">Công viên Nara</h3>
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #POPULAR
+      -->
+
+      <section class="section popular">
+        <div class="container">
+
+          <p class="section-subtitle" id="tourshot">Chuyến tham quan nổi bật</p>
+
+          <h2 class="h2 section-title">Tours phổ biến nhất</h2>
+
+          <ul class="popular-list">
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/popular-2.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="./assets/images/popular-3.jpg" width="740" height="518" loading="lazy"
+                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="P12D">12 Days</time>
+                  </span>
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+                    <div class="card-price">From $50.00</div>
+
+                    <div class="card-rating">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star-outline"></ion-icon>
+
+                      <data value="2">(2)</data>
+                    </div>
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+                  </h3>
+
+                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="aboutus">Về chúng tôi</p>
+
+            <h2 class="h2 section-title">Khám phá tất cả các tour du lịch tại Nhật Bản với chúng tôi.</h2>
+
+            <p class="about-text">
+              Hãy cùng chúng tôi khám phá mọi góc khuất của Nhật Bản! Với các hướng dẫn viên du lịch giàu kinh nghiệm, chúng tôi cam kết đưa bạn đi sâu vào văn hóa độc đáo và
+               vẻ đẹp tuyệt vời của đất nước này. Với mức giá vô cùng thân thiện và các tour đáng tin cậy, bạn có thể yên tâm rằng mỗi chuyến đi sẽ là một trải nghiệm đáng nhớ.
+               Đồng hành cùng chúng tôi và khám phá những điều kỳ diệu mà Nhật Bản mang lại!
+            </p>
+
+            <ul class="about-list">
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="compass"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Hướng dẫn viên du lịch</h3>
+
+                  <p class="about-item-text">
+                    Những người am hiểu sâu sắc về đất nước này và sẵn sàng chia sẻ kiến thức và kinh nghiệm để bạn có một chuyến đi đáng nhớ.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="briefcase"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Giá thân thiện</h3>
+
+                  <p class="about-item-text">
+                    Mức giá vô cùng thân thiện, mang lại trải nghiệm đầy đủ và không gây áp lực về tài chính.
+                  </p>
+                </div>
+
+              </li>
+
+              <li class="about-item">
+
+                <div class="about-item-icon">
+                  <ion-icon name="umbrella"></ion-icon>
+                </div>
+
+                <div class="about-item-content">
+                  <h3 class="h3 about-item-title">Tours đáng tin cậy</h3>
+
+                  <p class="about-item-text">
+                    Hãy khám phá Nhật Bản cùng với chúng tôi, nơi mà các tour được tổ chức với sự tin cậy tuyệt đối. Chúng tôi cam kết đem đến những trải nghiệm du lịch đáng tin cậy nhất, giúp bạn khám phá văn hóa và địa điểm du lịch tuyệt vời của đất nước Mặt Trời Mọc một cách an tâm và đầy niềm tin.
+                  </p>
+                </div>
+
+              </li>
+
+            </ul>
+
+            <a href="#" class="btn btn-primary contactLink">Đặt lịch ngay</a>
+
+          </div>
+
+          <figure class="about-banner">
+            <img src="./assets/images/a.jpg" width="756" height="842" loading="lazy" alt="" class="w1-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog">
+        <div class="container">
+
+          <p class="section-subtitle">Các bài đăng trên blog</p>
+
+          <h2 class="h2 section-title">3 Tin tức & bài viết mới nhất</h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img id="new1" src="./new/1/a.jpg" width="740" height="518" loading="lazy" 
+                    alt="CHUYẾN THAM QUAN PHÚ SĨ NGÀY 23/3/2024 XUẤT PHÁT TỪ TOKYO-NAGOYA-YOKOHAMA" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="11-03">11 tháng 3</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/hero-banner2.jpeg" style="border-radius: 50%;" width="30" height="30" alt="Trần Thành Công">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Trần Thành Công</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="https://www.facebook.com/NHT.TTC/posts/pfbid01Apfd5nGhAqG4Pje9pBExuBxLkKSKrumfZLg5FqffZJofc2jBY2Juf9xGyiDS9XZl" target="_blank">
+                      CHUYẾN THAM QUAN PHÚ SĨ NGÀY 23/3/2024 XUẤT PHÁT TỪ TOKYO-NAGOYA-YOKOHAMA
+                    </a>
+                  </h3>
+
+                  <a href="https://www.facebook.com/NHT.TTC/posts/pfbid01Apfd5nGhAqG4Pje9pBExuBxLkKSKrumfZLg5FqffZJofc2jBY2Juf9xGyiDS9XZl" target="_blank" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img id="new2" src="./new/2/a.jpg" width="740" height="518" loading="lazy"
+                      alt="TOUR NGẮM HOA ANH ĐÀO" class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="9-3">9 tháng 3</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/hero-banner2.jpeg" style="border-radius: 50%;" width="30" height="30" alt="Trần Thành Công">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Trần Thành Công</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="https://www.facebook.com/NHT.TTC/posts/pfbid0Zasgc1YUaRTTTiPN9fEzcqtvSj7pCfwpZ6sX8TwpGZSXj1qWgddaaC9AyHUUEzGSl" target="_blank">
+                      TOUR NGẮM HOA ANH ĐÀO
+                    </a>
+                  </h3>
+
+                  <a href="https://www.facebook.com/NHT.TTC/posts/pfbid0Zasgc1YUaRTTTiPN9fEzcqtvSj7pCfwpZ6sX8TwpGZSXj1qWgddaaC9AyHUUEzGSl" target="_blank" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner">
+
+                  <a href="#">
+                    <img id="new3" src="./new/3/a.jpg" width="740" height="518" loading="lazy"
+                      alt="Để đáp ứng nhu cầu tour lễ sắp tới, bên mình xin thông báo tuyển dụng HDV khu vực Kanto." class="img-cover">
+                  </a>
+
+                  <span class="card-badge">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="7-3">7 tháng 3</time>
+                  </span>
+
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="card-wrapper">
+
+                    <div class="author-wrapper">
+                      <figure class="author-avatar">
+                        <img src="./assets/images/hero-banner2.jpeg" style="border-radius: 50%;" width="30" height="30" alt="Trần Thành Công">
+                      </figure>
+
+                      <div>
+                        <a href="#" class="author-name">Trần Thành Công</a>
+
+                        <p class="author-title">Admin</p>
+                      </div>
+                    </div>
+
+                    <time class="publish-time" datetime="10:30">10:30 AM</time>
+
+                  </div>
+
+                  <h3 class="card-title">
+                    <a href="https://www.facebook.com/NHT.TTC/posts/pfbid024tBd3XDg1JPakFNdcBEAgzM6Kkjwt8xTy3fHT6UfhXuxouSCaE9opYFPZcAUdNTXl" target="_blank">
+                      Để đáp ứng nhu cầu tour lễ sắp tới, bên mình xin thông báo tuyển dụng HDV khu vực Kanto.
+                    </a>
+                  </h3>
+
+                  <a href="https://www.facebook.com/NHT.TTC/posts/pfbid024tBd3XDg1JPakFNdcBEAgzM6Kkjwt8xTy3fHT6UfhXuxouSCaE9opYFPZcAUdNTXl" target="_blank" class="btn-link">
+                    <span>Read More</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="footer-list">
+            <p class="footer-list-title">Google map</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.1941746290486!2d140.0465586!3d35.844242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6022795702b70581%3A0xddeb86071bf6ec63!2zVEMgR1JPVVAg5ZCI5ZCM5Lya56S-!5e0!3m2!1svi!2s!4v1710264245800!5m2!1svi!2s" width="800" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="footer-list">
+            <p class="footer-list-title">Fanpage chính thức</p>
+            <div class="fb-page" 
+              data-href="https://www.facebook.com/100067101506717"
+              data-width="380" 
+              data-hide-cover="false"
+              data-show-facepile="false"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-bottom">
+            <p class="copyright">
+              &copy; 2024 <a href="#" class="copyright-link">Nguyen Huu Thang</a>. All Rights Reserved
+            </p>
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-google"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/hieuung.js"></script>
+  <script src="./assets/js/tb.js"></script>
+  <script src="./assets/js/new.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
